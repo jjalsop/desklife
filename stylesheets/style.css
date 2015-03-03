@@ -1,0 +1,91 @@
+/* line 8, ../scss/style.sass */
+body {
+  background-color: #eeeeee;
+  font-size: 14px;
+  padding-top: 3em;
+}
+
+/* line 12, ../scss/style.sass */
+.container {
+  background-color: #FFF;
+  padding: 2em 3em 0.4em 3em;
+  margin-bottom: 1em;
+}
+/* line 2, ../scss/style.sass */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 17, ../scss/style.sass */
+.clear-container {
+  background: none;
+}
+
+/* line 19, ../scss/style.sass */
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Peak", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 21, ../scss/style.sass */
+h1 {
+  font-size: 1em;
+  font-weight: 800;
+  color: #404040;
+}
+
+/* line 25, ../scss/style.sass */
+p {
+  font-weight: 200;
+  font-size: 1em;
+  color: #666666;
+  margin-bottom: 1.3em;
+  line-height: 1.6;
+}
+
+/* line 32, ../scss/style.sass */
+.switch {
+  position: relative;
+  top: -6px;
+}
+
+/* line 36, ../scss/style.sass */
+.remindersOn {
+  display: none;
+}
+
+/* line 38, ../scss/style.sass */
+.remindersOff {
+  opacity: 0.5;
+}
+
+/* line 40, ../scss/style.sass */
+strike {
+  opacity: 0.5;
+}
+
+/* line 42, ../scss/style.sass */
+.settings {
+  font-size: 12px;
+}
+
+/* line 44, ../scss/style.sass */
+select, .postfix {
+  margin-bottom: 0;
+  position: relative;
+  top: -8px;
+  font-family: "Peak";
+  color: #666666 !important;
+}
+
+/* line 50, ../scss/style.sass */
+select {
+  padding-top: 12px;
+}
+
+/* line 54, ../scss/style.sass */
+.inactive select, .inactive .postfix, .inactive p {
+  opacity: 0.5;
+  pointer-events: none;
+}
