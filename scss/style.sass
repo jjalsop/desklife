@@ -1,0 +1,56 @@
+@mixin clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+
+body 
+	background-color: #eeeeee
+	font-size: 14px
+	padding-top: 3em
+.container 
+	background-color: #FFF
+	padding: 2em 3em 0.4em 3em // bottom padding should match bottom margin of paragraphs
+	margin-bottom: 1em
+	+clearfix
+.clear-container
+	background: none
+h1, h2, h3, h4, h5, h6, p 
+	font-family: "Peak", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+h1 
+	font-size: 1em
+	font-weight: 800
+	color: lighten(#000, 25%)
+p 
+	font-weight: 200
+	font-size: 1em
+	color: lighten(#000, 40%)
+	margin-bottom: 1.3em
+	line-height: 1.6
+
+.switch 
+	position: relative
+	top: -6px
+
+.remindersOn
+	display: none
+.remindersOff
+	opacity: 0.5
+strike 
+	opacity: 0.5
+.settings
+	font-size: 12px
+select, .postfix
+	margin-bottom: 0
+	position: relative
+	top: -8px
+	font-family: "Peak"
+	color: lighten(#000, 40%)!important
+select 
+	padding-top: 12px
+
+.inactive  
+	select, .postfix, p
+		opacity: 0.5
+		pointer-events: none
